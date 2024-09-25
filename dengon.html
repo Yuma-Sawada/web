@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<meta charset="utf-8"/>
+
+<header>
+<script>
+function 伝言する() {
+  if (入力内容.value === "") {
+    alert("伝言内容を入力してください\u3002");
+  } else {
+    伝言エリア.innerText = 入力内容.value;
+    alert("伝言内容をセットしました\u3002");
+    入力内容.value = "";
+  }
+}
+</script>
+</header>
+
+<body>
+伝言板
+<p id="伝言エリア">伝言はまだありません。</p>
+<input id="入力内容"><button onclick="伝言する();">送信</button>
+</body>
+</html>
